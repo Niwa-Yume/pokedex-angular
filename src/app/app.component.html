@@ -1,7 +1,8 @@
 <h1>Pokédex</h1>
-<h2>{{ name() }}</h2>
-<img [src]="imageSrc()" alt="Pikachu" />
-<p>Taille : {{size()}}</p>
-<p>Points de vie : {{ life() }}</p>
-<button (click)="incrementLife(); size()">+</button>
-<button (click)="decrementLife(); size()">-</button>
+@for (pokemon of listPokemon(); track pokemon.id) {
+    <h2>{{ pokemon.name }}</h2>
+    <img [src]="pokemon.picture" alt="Pikachu" />
+    <p>Points de vie : {{ pokemon.life }}</p>
+}@empty {
+    <p>Aucun pokémon trouvé</p>
+}
