@@ -38,3 +38,22 @@
         }
     </div>
 </div>
+
+<!-- VERSION DE BASE SANS LE DESIGN MAIS UNIQUEMENT AVE LA LOGIQUE DE L'APPLICATION
+
+
+<h1>Pokédex</h1>
+
+@for (pokemon of listPokemon(); track pokemon.id) {
+    <h2>{{ pokemon.name }}</h2>
+    <p>Taille : {{ size(pokemon) }}</p>
+    <img [src]="pokemon.picture" alt="Pikachu" />
+    <p>Points de vie : {{ pokemon.life }}</p>
+    <button (click)="incrementLife(pokemon)" [disabled]="pokemon.life >= 30">+</button>
+    <button (click)="decrementLife(pokemon)" [disabled]="pokemon.life <= 10">-</button>
+}
+
+@empty {
+    <p>Aucun pokémon trouvé</p>
+}
+-->

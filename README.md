@@ -1,27 +1,91 @@
-# AngularPokedexApp
+# Pokédex Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## 📖 À propos
+Ce projet est un Pokédex interactif développé avec Angular, offrant une interface utilisateur moderne pour explorer le monde des Pokémon. Déployé sur Vercel, il combine performance et accessibilité pour une expérience utilisateur optimale.
 
-## Development server
+## 🚀 Fonctionnalités
+- Liste complète des Pokémon avec pagination
+- Recherche de Pokémon par nom ou numéro
+- Affichage détaillé des caractéristiques de chaque Pokémon
+- Interface responsive pour une utilisation sur tous les appareils
+- Thème clair/sombre pour un confort visuel optimal
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🛠️ Technologies utilisées
+- Angular 18.1.0
+- TypeScript
+- RxJS
+- Angular Material (UI Components)
+- PokéAPI (pour les données Pokémon)
+- Vercel (Déploiement)
 
-## Code scaffolding
+## 🏁 Démarrage rapide
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prérequis
+- Node.js (version 14.x ou supérieure)
+- npm (normalement installé avec Node.js)
+- Angular CLI (`npm install -g @angular/cli`)
 
-## Build
+### Installation
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/votre-username/pokedex-angular.git
+   cd pokedex-angular
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
 
-## Running unit tests
+3. Lancez le serveur de développement :
+   ```bash
+   ng serve
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Ouvrez votre navigateur et accédez à `http://localhost:4200`.
 
-## Running end-to-end tests
+## 🧑‍💻 Commandes utiles
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `ng serve` : Lance le serveur de développement
+- `ng build` : Compile le projet pour la production
+- `ng test` : Exécute les tests unitaires
+- `ng lint` : Vérifie la qualité du code
+- `ng generate component nom-component` : Génère un nouveau composant
 
-## Further help
+## 📊 Structure du projet
+```
+src/
+|-- app/
+|   |-- components/
+|   |-- services/
+|   |-- models/
+|   |-- pages/
+|   |-- app.module.ts
+|   |-- app-routing.module.ts
+|-- assets/
+|-- environments/
+|-- index.html
+|-- main.ts
+|-- styles.scss
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 🌐 Déploiement
+Ce projet est configuré pour un déploiement automatique sur Vercel. Chaque push sur la branche `main` déclenche un nouveau déploiement.
+
+Pour déployer manuellement :
+1. Installez Vercel CLI : `npm i -g vercel`
+2. Lancez `vercel` à la racine du projet et suivez les instructions
+
+## 🤝 Contribution
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou proposer une pull request.
+
+## 📄 Licence
+Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+
+## 🙏 Remerciements
+- [PokéAPI](https://pokeapi.co/) pour la fourniture des données Pokémon
+- La communauté Angular pour son support continu
+
+---
+
+Développé avec ❤️ par Julien Castro
