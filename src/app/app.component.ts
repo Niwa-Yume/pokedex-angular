@@ -2,12 +2,12 @@ import { Component, signal, computed } from '@angular/core'
 import { POKEMON_LIST } from './pokemon-list.fake';
 import { Pokemon } from './pokemon.model';
 import { PokemonBorderDirective } from './pokemon-border.directive';
-
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [PokemonBorderDirective],
+  imports: [PokemonBorderDirective, DatePipe],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
