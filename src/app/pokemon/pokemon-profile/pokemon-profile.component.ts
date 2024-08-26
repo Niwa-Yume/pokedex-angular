@@ -1,10 +1,14 @@
 import { Component, inject, signal } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { PokemonService } from '../../pokemon.service';//C'est le service qui permet de récupérer les données des Pokémons
+import { DatePipe } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-pokemon-profile',
   templateUrl: './pokemon-profile.component.html',
+  imports: [DatePipe, RouterLink],
   styles: ``,
   standalone: true,
 })
